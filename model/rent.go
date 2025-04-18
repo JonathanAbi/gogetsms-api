@@ -1,8 +1,9 @@
 package model
 
 type RentListResponse struct {
-	Status string                `json:"status"`
-	Values map[string]RentDetail `json:"values"`
+	Status   string                `json:"status"`
+	Values   map[string]RentDetail `json:"values"`
+	Quantity int                   `json:"quantity"`
 }
 
 type RentDetail struct {
